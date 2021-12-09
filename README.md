@@ -6,6 +6,8 @@
     <img src="https://image.freepik.com/vetores-gratis/caminhao-de-entrega-com-uma-grande-caixa_1284-44424.jpg" width = "300px" height = "250px" >
     <p>Imagem disponivel em: <a href="https://br.freepik.com/fotos-vetores-gratis/estrada">Estrada vetor criado por macrovector</a></p>
 </p>
+<h2>Sobre o projeto</h2>
+<p>O projeto consiste em determinar uma rota de menor caminho ou uma rota de menor custo à partir de um grafo, onde será criado o mapa com o nome das cidades. O usuário entrará com a cidade de partida (origem) e a cidade destino. O programa irá retornar o menor caminho ou o menor custo (depende da escolha do usuario).</p>
 
 <h2>Classes e suas responsabilidades</h2>
 <h3><b>● ProjetoCaminhoneiro2.java(main): </b></h3>
