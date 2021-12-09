@@ -10,7 +10,7 @@
 <p>O projeto consiste em determinar uma rota de menor caminho ou uma rota de menor custo à partir de um grafo, onde será criado o mapa com o nome das cidades. O usuário entrará com a cidade de partida (origem) e a cidade destino. O programa irá retornar o menor caminho ou o menor custo (depende da escolha do usuario).</p>
 
 <h2>Classes e suas responsabilidades</h2>
-<h3><b>● ProjetoCaminhoneiro2.java(main): </b></h3>
+<h3><b>● ProjetoCamioneiro2.java(main): </b></h3>
 <p>Onde será executado todos os comandos de menu e interação com o usuario.</p>
 <h3><b>● Fachada.java:</b></h3>
 <p>Fachada onde enviará os comandos para criação do grafo de acordo com as opções fornecidas pelo usuario, também é responsavel pela formatação da saída do programa</p>
@@ -29,4 +29,4 @@
 
 ## Run
 
-- **INICIALIZAR O PROGRAMA PELA CLASSE MAIN "ProjetoCaminhoneiro2".**
+- **INICIALIZAR O PROGRAMA PELA CLASSE MAIN "ProjetoCamioneiro2".**
