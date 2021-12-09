@@ -1,4 +1,4 @@
-<h1>Projeto camioneiro com grafos - JAVA</h1>
+<h1>Projeto caminhoneiro com grafos - JAVA</h1>
 <strong>Atividade realizada em dupla:</strong> Cassio Mariano de Freitas e Lucas Henrique Hoffmann.
 <br>
 <br>
@@ -8,7 +8,7 @@
 </p>
 
 <h2>Classes e suas responsabilidades</h2>
-<h3><b>● ProjetoCamioneiro2.java(main): </b></h3>
+<h3><b>● ProjetoCaminhoneiro2.java(main): </b></h3>
 <p>Onde será executado todos os comandos de menu e interação com o usuario.</p>
 <h3><b>● Fachada.java:</b></h3>
 <p>Fachada onde enviará os comandos para criação do grafo de acordo com as opções fornecidas pelo usuario, também é responsavel pela formatação da saída do programa</p>
@@ -27,4 +27,4 @@
 
 ## Run
 
-- **INICIALIZAR O PROGRAMA PELA CLASSE MAIN "ProjetoCamioneiro2".**
+- **INICIALIZAR O PROGRAMA PELA CLASSE MAIN "ProjetoCaminhoneiro2".**
