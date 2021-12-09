@@ -1,9 +1,9 @@
 <h1>Projeto camioneiro com grafos - JAVA</h1>
-**Atividade realizada em dupla:** Cassio Mariano de Freitas e Lucas Henrique Hoffmann.
+<strong>Atividade realizada em dupla:</strong> Cassio Mariano de Freitas e Lucas Henrique Hoffmann.
 <br>
 <br>
 <p align="center">
-    <img src="https://image.freepik.com/vetores-gratis/caminhao-de-entrega-com-uma-grande-caixa_1284-44424.jpg" width = "500px" height = "400px" >
+    <img src="https://image.freepik.com/vetores-gratis/caminhao-de-entrega-com-uma-grande-caixa_1284-44424.jpg" width = "300px" height = "250px" >
     <p>Imagem disponivel em: <a href="https://br.freepik.com/fotos-vetores-gratis/estrada">Estrada vetor criado por macrovector</a></p>
 </p>
 
