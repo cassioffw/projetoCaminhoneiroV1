@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ProjetoCamioneiro2 {
+public class ProjetoCaminhoneiro2 {
 
     public static void main(String[] args) {
         Graph g = new Graph();

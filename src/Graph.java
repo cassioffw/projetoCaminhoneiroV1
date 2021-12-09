@@ -1,26 +1,24 @@
 import java.util.*;
 
 public class Graph {
-    private final Map<String, List<Vertex>> vertices;
+    private final Map<String, List<Aresta>> vertices;
     private static ArrayList<String> cidades;
     public static double custo;
-
+   
+    public Graph() {
+        Graph.cidades = new ArrayList<>();
+        this.vertices = new HashMap<>();
+    }
     public static double getCusto() {
         return custo;
     }
     public static void setCusto(double custo) {
         Graph.custo = custo;
     }
-   
-    public Graph() {
-        Graph.cidades = new ArrayList<>();
-        this.vertices = new HashMap<>();
-    }
-    public Map<String, List<Vertex>> getVertices() {
+    public Map<String, List<Aresta>> getvertices() {
         return vertices;
     }
     
-
     public ArrayList<String> getCidades() {
         return cidades;
     }
@@ -33,33 +31,33 @@ public class Graph {
         Graph.cidades = cidades;
     }
     
-    public void addVertex(String cidade, List<Vertex> vertex) {
-        this.vertices.put(cidade, vertex);
+    public void addVertice(String cidade, List<Aresta> aresta) {
+        this.vertices.put(cidade, aresta);
         cidades.add(cidade);
     }
 
     public List<String> menorCaminho(String origem, String destino) {
         final Map<String, Double> distancias = new HashMap<>();
-        final Map<String, Vertex> anterior = new HashMap<>();
-        PriorityQueue<Vertex> nodes = new PriorityQueue<>();
+        final Map<String, Aresta> anterior = new HashMap<>();
+        PriorityQueue<Aresta> nodes = new PriorityQueue<>();
         
         double infinito = Integer.MAX_VALUE;
 
-        vertices.keySet().stream().map(vertex -> {
-            if (Objects.equals(vertex, origem)) {
-                distancias.put(vertex, 0.0);
-                nodes.add(new Vertex(vertex, 0));
+        vertices.keySet().stream().map(Aresta -> {
+            if (Objects.equals(Aresta, origem)) {
+                distancias.put(Aresta, 0.0);
+                nodes.add(new Aresta(Aresta, 0));
             } else {
-                distancias.put(vertex, infinito);
-                nodes.add(new Vertex(vertex, infinito));
+                distancias.put(Aresta, infinito);
+                nodes.add(new Aresta(Aresta, infinito));
             }
-            return vertex;
-        }).forEachOrdered(vertex -> {
-            anterior.put(vertex, null);
+            return Aresta;
+        }).forEachOrdered(Aresta -> {
+            anterior.put(Aresta, null);
         });
 
         while (!nodes.isEmpty()) {
-            Vertex menor = nodes.poll();
+            Aresta menor = nodes.poll();
             if (Objects.equals(menor.getCidade(), destino)) {
                 final List<String> caminho = new ArrayList<>();
                 while (anterior.get(menor.getCidade()) != null) {
@@ -74,13 +72,13 @@ public class Graph {
             } else {
             }
 
-            for (Vertex vizinho : vertices.get(menor.getCidade())) {
+            for (Aresta vizinho : vertices.get(menor.getCidade())) {
                 double temp = distancias.get(menor.getCidade()) + vizinho.getDistancia();
                 if (temp < distancias.get(vizinho.getCidade())) {
                     distancias.put(vizinho.getCidade(), temp);
                     anterior.put(vizinho.getCidade(), menor);
 
-                    for (Vertex n : nodes) {
+                    for (Aresta n : nodes) {
                         if (Objects.equals(n.getCidade(), vizinho.getCidade())) {
                             nodes.remove(n);
                             n.setDistancia(temp);

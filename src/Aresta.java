@@ -1,13 +1,13 @@
 import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-class Vertex implements Comparable<Vertex> {
+class Aresta implements Comparable<Aresta> {
     private String cidade;
     private double distancia;
-    public Vertex(){
+    public Aresta(){
         
     }
-    public Vertex(String cidade, double distancia) {
+    public Aresta(String cidade, double distancia) {
         super();
         this.cidade = cidade;
         this.distancia = distancia;
@@ -31,7 +31,7 @@ class Vertex implements Comparable<Vertex> {
 
 
     @Override
-    public int compareTo(Vertex o) {
+    public int compareTo(Aresta o) {
         if (this.distancia < o.distancia) {
             return -1;
         } else if (this.distancia > o.distancia) {
@@ -39,5 +39,4 @@ class Vertex implements Comparable<Vertex> {
         }
         return this.getCidade().compareTo(o.getCidade());
     }
-
 }
