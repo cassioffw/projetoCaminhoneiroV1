@@ -7,7 +7,8 @@
     <p>Imagem disponivel em: <a href="https://br.freepik.com/fotos-vetores-gratis/estrada">Estrada vetor criado por macrovector</a></p>
 </p>
 <h2>Sobre o projeto</h2>
-<p>O projeto consiste em determinar uma rota de menor caminho ou uma rota de menor custo à partir de um grafo, onde será criado o mapa com o nome das cidades. O usuário entrará com a cidade de partida (origem) e a cidade destino. O programa irá retornar o menor caminho ou o menor custo (depende da escolha do usuario).</p>
+<p>O projeto consiste em determinar uma rota de menor caminho ou uma rota de menor custo à partir de um grafo, onde será criado o mapa com o nome das cidades. O usuário entrará com a cidade de partida (origem) e a cidade destino. O programa irá retornar o menor caminho ou o menor custo (depende da escolha do usuario), se escolhido o caminho de menor custo, o usuario deverá entrar com as seguintes informações:</p>
+<table><tr><td>- KM/L média do caminhão.</td></tr><tr><td>- Quantidade de eixos do caminhão.</td></tr></table>
 
 <h2>Classes e suas responsabilidades</h2>
 <h3><b>● ProjetoCamioneiro2.java(main): </b></h3>
